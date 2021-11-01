@@ -106,14 +106,12 @@ header nav ul li a:hover{
     width: 35px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    float: right;
+    float: left;
     
 }
 #contato {
     margin-left: 250px;
     margin-right: 250px;
     margin-bottom: 50px;
-    list-style: none;
-    
+    border-radius: 20px;    
 }

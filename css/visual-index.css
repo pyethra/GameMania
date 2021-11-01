@@ -1,0 +1,119 @@
+
+#header {
+    background-color: rgb(255, 255, 255);
+}
+#header img {
+    width: 200px;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+#header { 
+    box-shadow: gray;
+}
+header ul {
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    float: right;
+}
+header nav ul li{
+    margin: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    color:rgb(95, 95, 95);
+    background-color:rgba(0, 0, 0, 0);
+}
+
+/*Ultimos lançamentos*/
+.grupo-cards{
+    display: flex;
+    flex: wrap;
+    flex-direction: wrap;
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card-lançamentos{
+    width: 150px;
+    margin: 10px;
+    justify-content: center;
+    font-size: smaller;
+    flex-direction: wrap;
+}
+
+.card-lançamentos img{
+    width: 80%;
+    margin-left: 20px;
+}
+#ultimos-lançamentos{
+    flex-wrap: wrap;
+}
+
+
+/*Ofertas especiais*/
+.grupo-ofertas{
+    display: flex;
+    flex: wrap;
+    flex-direction: wrap;
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: wrap;
+}
+
+.card-oferta{
+    width: 150px;
+    justify-content: center;
+    font-size: smaller;
+    margin-left: 20px;
+    flex-direction: wrap;
+}
+
+.card-oferta img{
+    width: 80%;
+}
+
+.titulo {
+    margin-top: 30px;
+    font-size:x-large;
+    font-weight: bold;
+    margin-left: 250px;
+    flex-direction: wrap;
+}
+
+.subtitulo {
+    margin-top: 30px;
+    font-size:large;
+    flex-direction: wrap;
+}
+.titulo-contato{
+    margin-top: 30px;
+    font-size:x-large;
+    font-weight: bold;
+    flex-direction: wrap;
+}
+
+#contato img{
+    width: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    float: right;
+    
+}
+#contato {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+    list-style: none;
+    
+}

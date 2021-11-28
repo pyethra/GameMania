@@ -30,3 +30,123 @@ header nav ul li a:hover{
     color:rgb(95, 95, 95);
     background-color:rgba(0, 0, 0, 0);
 }
+  /* Ajustes pelas classes criadas no CSS */
+  .enderecos {
+    grid-area: enderecos;
+  }
+  .emails {
+    grid-area: emails;
+  }
+  .telefones {
+    grid-area: telefones;
+  }
+  .midias-sociais {
+    grid-area: midias-sociais;
+  }
+  .img-logo {
+    width: 100px;
+  }
+  .texto-centralizado {
+    text-align: center;
+  }
+  .grupo-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+  }
+  .senai-card {
+    width: 250px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .senai-card img {
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .senai-card div {
+    padding: 10px;
+  }
+  /* Ajustes do bootstrap */
+  .carousel-caption {
+    background-color: rgba(211, 211, 211, 0.7);
+    border-radius: 10px;
+  }
+  .carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+  }
+  .carousel-item {
+    height: 40vw;
+  }
+  .carousel-item img {
+    height: 100%;
+  }
+  
+  /* Ajuste para responsividade */
+  @media screen and (min-width: 720px) {
+    footer {
+      grid-template-areas: 
+        "logotipo emails midias-sociais"
+        "logotipo enderecos menu-rodape"
+        "logotipo telefones menu-rodape";
+    }
+    #img-rodape, #menu-rodape {
+      display: block;
+    }
+    #img-rodape {
+      grid-area: logotipo;
+    }
+    #menu-rodape {
+      grid-area: menu-rodape;
+    }
+    #banner, #novidade {
+      padding: 20px;
+      column-gap: 50px;
+    }
+    #banner img, #novidade img {
+      width: 30vw;
+      height: 100%;
+    }
+    #banner div, #novidade div {
+      margin-top: 20px;
+      width: 50vw;
+    }
+    #nav-desktop {
+      display: block;
+      margin-top: 30px;
+      float: right;
+    }
+    #nav-desktop a, #menu-rodape a{
+      text-decoration: none;
+      color: black;
+    }
+    #menu-rodape ul li {
+      margin-top: 10px;
+    }
+    #menu-mobile {
+      display: none;
+    }
+  
+  }
+  
+  #forms {
+    background-color:rgb(226, 226, 226);
+    padding: 50px;
+    margin: 40px;
+    width: 50vw;
+  }
+    
+  #contato-img{
+    color: aliceblue;
+    font-weight: bold;
+    width: 50vw;
+  
+  }
+  #contato-img img {
+    width: 100%;
+  }

@@ -1,17 +1,4 @@
 
-#header {
-    background-color: rgb(255, 255, 255);
-}
-#header img {
-    width: 200px;
-    flex-direction: column;
-    padding: 20px;
-    margin-left: 40px;
-}
-
-#header { 
-    box-shadow: gray;
-}
 header ul {
     list-style:none;
     display: flex;
@@ -32,47 +19,67 @@ header nav ul li a:hover{
     background-color:rgba(0, 0, 0, 0);
 }
 
+
+#redes img{
+    width: 33px;
+    display: flex;
+    float: left;
+    margin-left: 10px;
+}
+
+#contato {
+    background-color: rgb(244, 244, 244);
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+#header {
+    background-color: rgb(255, 255, 255);
+}
+#header img {
+    width: 200px;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+#header { 
+    box-shadow: gray;
+}
+
+#menu-mobile {
+    display: block;
+    float: right;
+    margin-top: 20px;
+  }
+
+
+#ofertas h5 {
+    padding: 20px;
+    margin-left: 30px; 
+    font-weight: bold;
+}
+
 .carousel-inner .carousel-item {
     width: 100%;
-    height: 450px;
+    height: 30vh;
 }
 
 /*Ultimos lançamentos*/
-.grupo-cards{
-    display: flex;
-    flex: wrap;
-    flex-direction: wrap;
-    column-gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
+
+.grupo-ofertas h6 {
+    margin-top: 20px;
 }
 
-.card-lançamentos{
-    width: 150px;
-    margin: 10px;
-    justify-content: center;
-    font-size: smaller;
-    flex-direction: wrap;
-}
-
-.card-lançamentos img{
-    width: 80%;
-    margin-left: 20px;
-}
-#ultimos-lançamentos{
-    flex-wrap: wrap;
-}
-
-
-/*Ofertas especiais*/
 .grupo-ofertas{
     display: flex;
     flex: wrap;
     flex-direction: wrap;
     column-gap: 20px;
     justify-content: center;
-    margin-top: 30px;
     flex-direction: wrap;
+    margin-bottom: 20px;
 }
 
 .card-oferta{
@@ -88,37 +95,33 @@ header nav ul li a:hover{
 }
 
 .titulo {
-    margin-top: 30px;
     font-size:x-large;
     font-weight: bold;
-    margin-left: 250px;
     flex-direction: wrap;
 }
 
 .subtitulo {
-    margin-top: 30px;
-    font-size:large;
     flex-direction: wrap;
 }
 .titulo-contato{
-    margin-top: 30px;
-    font-size:x-large;
-    font-weight: bold;
     flex-direction: wrap;
 }
 
-#redes img{
-    width: 35px;
-    display: flex;
-    float: left;
-    margin-left: 10px;
-}
-#contato {
-    text-align: left;
-    margin-left: 250px;
-}
-#redes span{
-    font-size:larger;
-    font-weight:500;
-    padding: 20px;
+@media screen and (min-width: 760px) {
+    .card-oferta {
+        display: flex;
+        flex-direction: column;
+        column-gap: 40px;
+        justify-content: center;
+        flex-direction: wrap;
+        margin-bottom: 20px;
+        }
+        .carousel-inner .carousel-item {
+            width: 100%;
+            height: 60vh;
+        }
+        #carouselExampleIndicators {            
+            width: 100%;
+            height: 60vh;
+        }
 }

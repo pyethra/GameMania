@@ -24,8 +24,14 @@
                 <li> <a href="#">Ofertas</a></li>
             </ul>
         </nav>
-        <div id="nav-mobile">
-            <i class="bi bi-list"></i>
+        <div id="nav-mobile"  >
+            <i class="bi bi-list" data-bs-toggle="dropdown" aria-expanded="false" id="teste"></i>
+            <ul class="dropdown-menu" aria-labelledby="teste">
+                <li> <a class="dropdown-item" href="#">Perfil</a></li>
+                <li> <a class="dropdown-item" href="#">Ultimos lançamentos</a></li>
+                <li> <a class="dropdown-item" href="#">Novidades</a></li>
+                <li> <a class="dropdown-item" href="#">Ofertas</a></li>
+            </ul>
         </div>
     </header>
 
@@ -181,9 +187,15 @@
 
     </section>
 
+    <div id="menuMobile" class="hide">
+       
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
         crossorigin="anonymous"></script>
+
+    <script src="javascript/eventos.js"></script>
 </body>
 
 </html>

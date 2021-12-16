@@ -5,4 +5,3 @@ function menuMobile() {
   ele.classList.remove("hide")
   else ele.classList.add("hide")
 }
-
